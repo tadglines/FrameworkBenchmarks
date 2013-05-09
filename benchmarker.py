@@ -320,7 +320,6 @@ class Benchmarker:
         p = subprocess.Popen(self.ssh_string, stdin=subprocess.PIPE, shell=True)
         p.communicate("""
           sudo restart mysql
-          sudo restart mongodb
         """)
         time.sleep(10)
         
